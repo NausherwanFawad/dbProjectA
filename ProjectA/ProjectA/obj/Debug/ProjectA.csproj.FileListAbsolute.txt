@@ -7,3 +7,16 @@ C:\Users\Shero\Documents\Visual Studio 2015\Projects\ProjectA\ProjectA\obj\Debug
 C:\Users\Shero\Documents\Visual Studio 2015\Projects\ProjectA\ProjectA\obj\Debug\ProjectA.csproj.GenerateResource.Cache
 C:\Users\Shero\Documents\Visual Studio 2015\Projects\ProjectA\ProjectA\obj\Debug\ProjectA.exe
 C:\Users\Shero\Documents\Visual Studio 2015\Projects\ProjectA\ProjectA\obj\Debug\ProjectA.pdb
+C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\bin\Debug\ProjectA.exe.config
+C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.exe
+C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.pdb
+C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\bin\Debug\ProjectA.exe
+C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\bin\Debug\ProjectA.pdb
+C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.csprojResolveAssemblyReference.cache
+C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.AddAdvisor.resources
+C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.AddProject.resources
+C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.CreateGroup.resources
+C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.Form1.resources
+C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.Login.resources
+C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.Properties.Resources.resources
+C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.csproj.GenerateResource.Cache

@@ -36,11 +36,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.Email = new System.Windows.Forms.TextBox();
-            this.Contact = new System.Windows.Forms.TextBox();
-            this.LastName = new System.Windows.Forms.TextBox();
-            this.FirstName = new System.Windows.Forms.TextBox();
-            this.RegisterationNo = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtContact = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.txtRegisterationNo = new System.Windows.Forms.TextBox();
             this.DateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
@@ -120,41 +120,41 @@
             this.label8.TabIndex = 9;
             this.label8.Text = "Gender";
             // 
-            // Email
+            // txtEmail
             // 
-            this.Email.Location = new System.Drawing.Point(218, 190);
-            this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(134, 20);
-            this.Email.TabIndex = 10;
+            this.txtEmail.Location = new System.Drawing.Point(218, 190);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(134, 20);
+            this.txtEmail.TabIndex = 10;
             // 
-            // Contact
+            // txtContact
             // 
-            this.Contact.Location = new System.Drawing.Point(218, 159);
-            this.Contact.Name = "Contact";
-            this.Contact.Size = new System.Drawing.Size(134, 20);
-            this.Contact.TabIndex = 12;
-            this.Contact.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.txtContact.Location = new System.Drawing.Point(218, 159);
+            this.txtContact.Name = "txtContact";
+            this.txtContact.Size = new System.Drawing.Size(134, 20);
+            this.txtContact.TabIndex = 12;
+            this.txtContact.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // LastName
+            // txtLastName
             // 
-            this.LastName.Location = new System.Drawing.Point(218, 128);
-            this.LastName.Name = "LastName";
-            this.LastName.Size = new System.Drawing.Size(134, 20);
-            this.LastName.TabIndex = 13;
+            this.txtLastName.Location = new System.Drawing.Point(218, 128);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(134, 20);
+            this.txtLastName.TabIndex = 13;
             // 
-            // FirstName
+            // txtFirstName
             // 
-            this.FirstName.Location = new System.Drawing.Point(218, 102);
-            this.FirstName.Name = "FirstName";
-            this.FirstName.Size = new System.Drawing.Size(134, 20);
-            this.FirstName.TabIndex = 14;
+            this.txtFirstName.Location = new System.Drawing.Point(218, 102);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(134, 20);
+            this.txtFirstName.TabIndex = 14;
             // 
-            // RegisterationNo
+            // txtRegisterationNo
             // 
-            this.RegisterationNo.Location = new System.Drawing.Point(218, 72);
-            this.RegisterationNo.Name = "RegisterationNo";
-            this.RegisterationNo.Size = new System.Drawing.Size(134, 20);
-            this.RegisterationNo.TabIndex = 15;
+            this.txtRegisterationNo.Location = new System.Drawing.Point(218, 72);
+            this.txtRegisterationNo.Name = "txtRegisterationNo";
+            this.txtRegisterationNo.Size = new System.Drawing.Size(134, 20);
+            this.txtRegisterationNo.TabIndex = 15;
             // 
             // DateOfBirth
             // 
@@ -182,11 +182,11 @@
             this.ClientSize = new System.Drawing.Size(500, 334);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.DateOfBirth);
-            this.Controls.Add(this.RegisterationNo);
-            this.Controls.Add(this.FirstName);
-            this.Controls.Add(this.LastName);
-            this.Controls.Add(this.Contact);
-            this.Controls.Add(this.Email);
+            this.Controls.Add(this.txtRegisterationNo);
+            this.Controls.Add(this.txtFirstName);
+            this.Controls.Add(this.txtLastName);
+            this.Controls.Add(this.txtContact);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -211,11 +211,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox Email;
-        private System.Windows.Forms.TextBox Contact;
-        private System.Windows.Forms.TextBox LastName;
-        private System.Windows.Forms.TextBox FirstName;
-        private System.Windows.Forms.TextBox RegisterationNo;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtContact;
+        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.TextBox txtRegisterationNo;
         private System.Windows.Forms.DateTimePicker DateOfBirth;
         private System.Windows.Forms.ComboBox comboBox1;
     }

@@ -38,18 +38,18 @@ namespace ProjectA
             {
                 if (comboBox1.SelectedIndex == 0)
                 {
-                    Insert = "insert into Person(FirstName, LastName,Contact,Email, DateOfBirth, Gender) values ('"+Convert.ToString(FirstName.Text)+"' , '"+Convert.ToString(LastName.Text)+"' , '"+Convert.ToString(Contact.Text)+"' , '"+Convert.ToString(Email.Text)+"' , '"+Convert.ToDateTime(DateOfBirth.Value)+"' , '"+1+"')";
+                    Insert = "insert into Person(FirstName, LastName,Contact,Email, DateOfBirth, Gender) values ('"+Convert.ToString(txtFirstName.Text)+"' , '"+Convert.ToString(txtLastName.Text)+"' , '"+Convert.ToString(txtContact.Text)+"' , '"+Convert.ToString(txtEmail.Text)+"' , '"+Convert.ToDateTime(DateOfBirth.Value)+"' , '"+1+"')";
                 }
                 else
                 {
-                    Insert = "insert into Person(FirstName, LastName,Contact,Email, DateOfBirth, Gender) values ('" + Convert.ToString(FirstName.Text) + "' , '" + Convert.ToString(LastName.Text) + "' , '" + Convert.ToString(Contact.Text) + "' , '" + Convert.ToString(Email.Text) + "' , '" + Convert.ToDateTime(DateOfBirth.Value) + "' , '" + 2 + "')";
+                    Insert = "insert into Person(FirstName, LastName,Contact,Email, DateOfBirth, Gender) values ('" + Convert.ToString(txtFirstName.Text) + "' , '" + Convert.ToString(txtLastName.Text) + "' , '" + Convert.ToString(txtContact.Text) + "' , '" + Convert.ToString(txtEmail.Text) + "' , '" + Convert.ToDateTime(DateOfBirth.Value) + "' , '" + 2 + "')";
                 }
                 SqlCommand sqlcmd = new SqlCommand(Insert, con);
                 sqlcmd.ExecuteNonQuery();
                 int id;
                 sqlcmd.CommandText = "Select @@identity";
                 id = Convert.ToInt32(sqlcmd.ExecuteScalar());
-                string studentinsert = "insert into Student(Id, RegistrationNo) values ('"+id+"' , '"+Convert.ToString(RegisterationNo.Text)+"')";
+                string studentinsert = "insert into Student(Id, RegistrationNo) values ('"+id+"' , '"+Convert.ToString(txtRegisterationNo.Text)+"')";
                 SqlCommand cmd = new SqlCommand(studentinsert , con);
                 cmd.ExecuteNonQuery();
             }
