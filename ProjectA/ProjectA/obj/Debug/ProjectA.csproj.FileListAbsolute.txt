@@ -1,0 +1,9 @@
+c:\users\shero\documents\visual studio 2015\Projects\ProjectA\ProjectA\bin\Debug\ProjectA.exe.config
+C:\Users\Shero\Documents\Visual Studio 2015\Projects\ProjectA\ProjectA\bin\Debug\ProjectA.exe
+C:\Users\Shero\Documents\Visual Studio 2015\Projects\ProjectA\ProjectA\bin\Debug\ProjectA.pdb
+C:\Users\Shero\Documents\Visual Studio 2015\Projects\ProjectA\ProjectA\obj\Debug\ProjectA.csprojResolveAssemblyReference.cache
+C:\Users\Shero\Documents\Visual Studio 2015\Projects\ProjectA\ProjectA\obj\Debug\ProjectA.Form1.resources
+C:\Users\Shero\Documents\Visual Studio 2015\Projects\ProjectA\ProjectA\obj\Debug\ProjectA.Properties.Resources.resources
+C:\Users\Shero\Documents\Visual Studio 2015\Projects\ProjectA\ProjectA\obj\Debug\ProjectA.csproj.GenerateResource.Cache
+C:\Users\Shero\Documents\Visual Studio 2015\Projects\ProjectA\ProjectA\obj\Debug\ProjectA.exe
+C:\Users\Shero\Documents\Visual Studio 2015\Projects\ProjectA\ProjectA\obj\Debug\ProjectA.pdb
