@@ -66,5 +66,30 @@ namespace ProjectA
         {
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login l = new Login();
+            l.Show();
+            this.Hide();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(conStr);
+            con.Open();
+            string select;
+            if (con.State == System.Data.ConnectionState.Open)
+            {
+                select = "select FirstName,LastName,Student.RegistrationNo,Contact,Email,DateOfBirth,lookup.Value from Person join Student on Person.Id=Student.id join Lookup on Lookup.Id=Person.Gender";
+                SqlDataAdapter data = new SqlDataAdapter(select, con);
+                DataTable dt = new DataTable();
+
+                data.Fill(dt);
+                BindingSource src = new BindingSource();
+                src.DataSource = dt;
+                dataGridView1.DataSource = src;
+            }
+        }
     }
 }

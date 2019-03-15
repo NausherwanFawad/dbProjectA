@@ -26,5 +26,26 @@ namespace ProjectA
             this.Hide();
             ad.Show();
         }
+
+        private void btnStudent_Click(object sender, EventArgs e)
+        {
+            Form1 f2 = new Form1();
+            f2.Show();
+            this.Hide();
+        }
+
+        private void btnAdvisor_Click(object sender, EventArgs e)
+        {
+            AddAdvisor ad = new AddAdvisor();
+            ad.Show();
+            this.Hide();
+        }
+
+        private void btnEvaluation_Click(object sender, EventArgs e)
+        {
+            Evaluation ei = new Evaluation();
+            ei.Show();
+            this.Hide();
+        }
     }
 }

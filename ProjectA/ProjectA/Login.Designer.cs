@@ -28,78 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblusername = new System.Windows.Forms.Label();
-            this.lblpassword = new System.Windows.Forms.Label();
-            this.txtusername = new System.Windows.Forms.TextBox();
-            this.txtpassword = new System.Windows.Forms.TextBox();
             this.btnlogin = new System.Windows.Forms.Button();
+            this.btnAdvisor = new System.Windows.Forms.Button();
+            this.btnStudent = new System.Windows.Forms.Button();
+            this.btnEvaluation = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // lblusername
-            // 
-            this.lblusername.AutoSize = true;
-            this.lblusername.Location = new System.Drawing.Point(86, 108);
-            this.lblusername.Name = "lblusername";
-            this.lblusername.Size = new System.Drawing.Size(55, 13);
-            this.lblusername.TabIndex = 0;
-            this.lblusername.Text = "Username";
-            // 
-            // lblpassword
-            // 
-            this.lblpassword.AutoSize = true;
-            this.lblpassword.Location = new System.Drawing.Point(86, 175);
-            this.lblpassword.Name = "lblpassword";
-            this.lblpassword.Size = new System.Drawing.Size(53, 13);
-            this.lblpassword.TabIndex = 1;
-            this.lblpassword.Text = "Password";
-            // 
-            // txtusername
-            // 
-            this.txtusername.Location = new System.Drawing.Point(171, 105);
-            this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(117, 20);
-            this.txtusername.TabIndex = 2;
-            // 
-            // txtpassword
-            // 
-            this.txtpassword.Location = new System.Drawing.Point(171, 172);
-            this.txtpassword.Name = "txtpassword";
-            this.txtpassword.Size = new System.Drawing.Size(117, 20);
-            this.txtpassword.TabIndex = 3;
             // 
             // btnlogin
             // 
-            this.btnlogin.Location = new System.Drawing.Point(213, 241);
+            this.btnlogin.Location = new System.Drawing.Point(76, 153);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(75, 23);
             this.btnlogin.TabIndex = 4;
-            this.btnlogin.Text = "Login";
+            this.btnlogin.Text = "Project";
             this.btnlogin.UseVisualStyleBackColor = true;
             this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
+            // 
+            // btnAdvisor
+            // 
+            this.btnAdvisor.Location = new System.Drawing.Point(144, 213);
+            this.btnAdvisor.Name = "btnAdvisor";
+            this.btnAdvisor.Size = new System.Drawing.Size(75, 23);
+            this.btnAdvisor.TabIndex = 5;
+            this.btnAdvisor.Text = "Advisor";
+            this.btnAdvisor.UseVisualStyleBackColor = true;
+            this.btnAdvisor.Click += new System.EventHandler(this.btnAdvisor_Click);
+            // 
+            // btnStudent
+            // 
+            this.btnStudent.Location = new System.Drawing.Point(144, 100);
+            this.btnStudent.Name = "btnStudent";
+            this.btnStudent.Size = new System.Drawing.Size(75, 23);
+            this.btnStudent.TabIndex = 6;
+            this.btnStudent.Text = "Student";
+            this.btnStudent.UseVisualStyleBackColor = true;
+            this.btnStudent.Click += new System.EventHandler(this.btnStudent_Click);
+            // 
+            // btnEvaluation
+            // 
+            this.btnEvaluation.Location = new System.Drawing.Point(223, 153);
+            this.btnEvaluation.Name = "btnEvaluation";
+            this.btnEvaluation.Size = new System.Drawing.Size(75, 23);
+            this.btnEvaluation.TabIndex = 7;
+            this.btnEvaluation.Text = "Evaluation";
+            this.btnEvaluation.UseVisualStyleBackColor = true;
+            this.btnEvaluation.Click += new System.EventHandler(this.btnEvaluation_Click);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(396, 353);
+            this.Controls.Add(this.btnEvaluation);
+            this.Controls.Add(this.btnStudent);
+            this.Controls.Add(this.btnAdvisor);
             this.Controls.Add(this.btnlogin);
-            this.Controls.Add(this.txtpassword);
-            this.Controls.Add(this.txtusername);
-            this.Controls.Add(this.lblpassword);
-            this.Controls.Add(this.lblusername);
             this.Name = "Login";
             this.Text = "Login";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblusername;
-        private System.Windows.Forms.Label lblpassword;
-        private System.Windows.Forms.TextBox txtusername;
-        private System.Windows.Forms.TextBox txtpassword;
         private System.Windows.Forms.Button btnlogin;
+        private System.Windows.Forms.Button btnAdvisor;
+        private System.Windows.Forms.Button btnStudent;
+        private System.Windows.Forms.Button btnEvaluation;
     }
 }

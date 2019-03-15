@@ -20,3 +20,4 @@ C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.Form1.res
 C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.Login.resources
 C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.Properties.Resources.resources
 C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.csproj.GenerateResource.Cache
+C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.Evaluation.resources
