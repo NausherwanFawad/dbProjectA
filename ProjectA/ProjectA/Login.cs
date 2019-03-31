@@ -29,7 +29,7 @@ namespace ProjectA
 
         private void btnStudent_Click(object sender, EventArgs e)
         {
-            Form1 f2 = new Form1();
+            Students f2 = new Students();
             f2.Show();
             this.Hide();
         }
@@ -46,6 +46,12 @@ namespace ProjectA
             Evaluation ei = new Evaluation();
             ei.Show();
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CreateGroup c = new CreateGroup();
+            c.Show();
         }
     }
 }

@@ -30,8 +30,13 @@ namespace ProjectA
                 Insert = "insert into Project( Description, Title) values ( '"+Convert.ToString(txtDerscription.Text)+ "' , '" + Convert.ToString(txtprojecttitle.Text) + "' )";
                 SqlCommand cmd = new SqlCommand(Insert, con);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Project Added in DataBase");
+                
             }
+            MessageBox.Show("Project Added in DataBase");
+            AddProject ap = new AddProject();
+            this.Close();
+            ap.Show();
+
         }
 
         private void AddProject_Load(object sender, EventArgs e)
@@ -41,7 +46,7 @@ namespace ProjectA
             string select;
             if (con.State == System.Data.ConnectionState.Open)
             {
-                select = "select Title,Description from Project";
+                select = "select * from Project";
                 SqlDataAdapter data = new SqlDataAdapter(select, con);
                 DataTable dt = new DataTable();
              
@@ -58,10 +63,28 @@ namespace ProjectA
             l.Show();
             this.Hide();
         }
-
+        int selected;
+        int id;
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            selected = dataGridView1.CurrentCell.RowIndex;
+            DataGridViewRow r = dataGridView1.Rows[selected];
+            id = (int)r.Cells[1].Value;
+            if(e.ColumnIndex == 0)
+            {
+                SqlConnection con = new SqlConnection(conStr);
+                con.Open();
+                if (con.State == System.Data.ConnectionState.Open)
+                {
+                    string query = "Delete from Project where Id = '" + id + "'";
+                    SqlCommand s = new SqlCommand(query, con);
+                    s.ExecuteNonQuery();
+                }
+                MessageBox.Show("Succesfully Deleted");
+                AddProject ap = new AddProject();
+                this.Close();
+                ap.Show();
+            }
         }
     }
 }

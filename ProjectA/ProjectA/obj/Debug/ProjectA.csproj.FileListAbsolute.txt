@@ -16,8 +16,8 @@ C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.csprojRes
 C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.AddAdvisor.resources
 C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.AddProject.resources
 C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.CreateGroup.resources
-C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.Form1.resources
 C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.Login.resources
 C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.Properties.Resources.resources
 C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.csproj.GenerateResource.Cache
 C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.Evaluation.resources
+C:\Users\Shero\Desktop\dbProjectA\ProjectA\ProjectA\obj\Debug\ProjectA.Students.resources

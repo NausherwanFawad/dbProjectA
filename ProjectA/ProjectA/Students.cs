@@ -10,9 +10,9 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace ProjectA
 {
-    public partial class Form1 : Form
+    public partial class Students : Form
     {
-        public Form1()
+        public Students()
         {
             InitializeComponent();
         }
@@ -52,6 +52,10 @@ namespace ProjectA
                 string studentinsert = "insert into Student(Id, RegistrationNo) values ('"+id+"' , '"+Convert.ToString(txtRegisterationNo.Text)+"')";
                 SqlCommand cmd = new SqlCommand(studentinsert , con);
                 cmd.ExecuteNonQuery();
+                MessageBox.Show("Successfully Added");
+                Students f = new Students();
+                this.Close();
+                f.Show();
             }
 
 
@@ -81,7 +85,7 @@ namespace ProjectA
             string select;
             if (con.State == System.Data.ConnectionState.Open)
             {
-                select = "select FirstName,LastName,Student.RegistrationNo,Contact,Email,DateOfBirth,lookup.Value from Person join Student on Person.Id=Student.id join Lookup on Lookup.Id=Person.Gender";
+                select = "select Student.Id , FirstName,LastName,Student.RegistrationNo,Contact,Email,DateOfBirth,lookup.Value from Person join Student on Person.Id=Student.id join Lookup on Lookup.Id=Person.Gender";
                 SqlDataAdapter data = new SqlDataAdapter(select, con);
                 DataTable dt = new DataTable();
 
@@ -89,6 +93,32 @@ namespace ProjectA
                 BindingSource src = new BindingSource();
                 src.DataSource = dt;
                 dataGridView1.DataSource = src;
+            }
+        }
+        int id;
+        int selected;
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            selected = dataGridView1.CurrentCell.RowIndex;
+            DataGridViewRow r = dataGridView1.Rows[selected];
+            id = (int)r.Cells[1].Value;
+            if (e.ColumnIndex == 0)
+            {
+                SqlConnection con = new SqlConnection(conStr);
+                con.Open();
+                if (con.State == System.Data.ConnectionState.Open)
+                {
+                    string query = "Delete from Student where Id = '" + id + "'";
+                    SqlCommand s = new SqlCommand(query, con);
+                    s.ExecuteNonQuery();
+                    string query1 = "Delete from Person where Id = '" + id + "'";
+                    SqlCommand sq = new SqlCommand(query1, con);
+                    sq.ExecuteNonQuery();
+                }
+                MessageBox.Show("Succesfully Deleted");
+                Students ap = new Students();
+                this.Close();
+                ap.Show();
             }
         }
     }

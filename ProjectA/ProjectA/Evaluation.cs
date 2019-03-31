@@ -30,12 +30,35 @@ namespace ProjectA
                 SqlCommand cmd = new SqlCommand(Insert, con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Evaluation Added in DataBase");
+                Evaluation ea = new Evaluation();
+                ea.Show();
+                this.Close();
             }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            int selected = dataGridView1.CurrentCell.RowIndex;
+            DataGridViewRow r = dataGridView1.Rows[selected];
+            int id = (int)r.Cells[1].Value;
+            if (e.ColumnIndex == 0)
+            {
+                SqlConnection con = new SqlConnection(conStr);
+                con.Open();
+                if (con.State == System.Data.ConnectionState.Open)
+                {
+                    string query = "Delete from Evaluation where Id = '" + id + "'";
+                    SqlCommand s = new SqlCommand(query, con);
+                    s.ExecuteNonQuery();
+                    //string query1 = "Delete from Person where Id = '" + id + "'";
+                    //SqlCommand sq = new SqlCommand(query1, con);
+                    //sq.ExecuteNonQuery();
+                }
+                MessageBox.Show("Succesfully Deleted");
+                Evaluation ap = new Evaluation() ;
+                this.Close();
+                ap.Show();
+            }
         }
 
         private void Evaluation_Load(object sender, EventArgs e)
@@ -46,7 +69,7 @@ namespace ProjectA
             string select;
             if (con.State == System.Data.ConnectionState.Open)
             {
-                select = "select Name,TotalMarks, TotalWeightage from Evaluation";
+                select = "select * from Evaluation";
                 SqlDataAdapter data = new SqlDataAdapter(select, con);
                 DataTable dt = new DataTable();
 
