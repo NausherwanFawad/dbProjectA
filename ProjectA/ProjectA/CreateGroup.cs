@@ -48,5 +48,12 @@ namespace ProjectA
         {
 
         }
+
+        private void lnkHome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login l = new Login();
+            l.Show();
+            this.Hide();
+        }
     }
 }

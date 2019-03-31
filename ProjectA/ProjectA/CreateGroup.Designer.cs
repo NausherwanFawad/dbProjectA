@@ -40,6 +40,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.AddGroup = new System.Windows.Forms.Button();
+            this.lnkHome = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -147,11 +148,23 @@
             this.AddGroup.UseVisualStyleBackColor = true;
             this.AddGroup.Click += new System.EventHandler(this.AddGroup_Click);
             // 
+            // lnkHome
+            // 
+            this.lnkHome.AutoSize = true;
+            this.lnkHome.Location = new System.Drawing.Point(87, 383);
+            this.lnkHome.Name = "lnkHome";
+            this.lnkHome.Size = new System.Drawing.Size(35, 13);
+            this.lnkHome.TabIndex = 13;
+            this.lnkHome.TabStop = true;
+            this.lnkHome.Text = "Home";
+            this.lnkHome.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkHome_LinkClicked);
+            // 
             // CreateGroup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(867, 429);
+            this.Controls.Add(this.lnkHome);
             this.Controls.Add(this.AddGroup);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label5);
@@ -187,5 +200,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button AddGroup;
+        private System.Windows.Forms.LinkLabel lnkHome;
     }
 }

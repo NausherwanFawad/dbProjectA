@@ -32,12 +32,12 @@
             this.btnAdvisor = new System.Windows.Forms.Button();
             this.btnStudent = new System.Windows.Forms.Button();
             this.btnEvaluation = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.CreateGroup = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnlogin
             // 
-            this.btnlogin.Location = new System.Drawing.Point(76, 153);
+            this.btnlogin.Location = new System.Drawing.Point(65, 109);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(75, 23);
             this.btnlogin.TabIndex = 4;
@@ -47,7 +47,7 @@
             // 
             // btnAdvisor
             // 
-            this.btnAdvisor.Location = new System.Drawing.Point(144, 213);
+            this.btnAdvisor.Location = new System.Drawing.Point(65, 247);
             this.btnAdvisor.Name = "btnAdvisor";
             this.btnAdvisor.Size = new System.Drawing.Size(75, 23);
             this.btnAdvisor.TabIndex = 5;
@@ -57,7 +57,7 @@
             // 
             // btnStudent
             // 
-            this.btnStudent.Location = new System.Drawing.Point(144, 100);
+            this.btnStudent.Location = new System.Drawing.Point(149, 178);
             this.btnStudent.Name = "btnStudent";
             this.btnStudent.Size = new System.Drawing.Size(75, 23);
             this.btnStudent.TabIndex = 6;
@@ -67,30 +67,30 @@
             // 
             // btnEvaluation
             // 
-            this.btnEvaluation.Location = new System.Drawing.Point(223, 153);
+            this.btnEvaluation.Location = new System.Drawing.Point(241, 241);
             this.btnEvaluation.Name = "btnEvaluation";
-            this.btnEvaluation.Size = new System.Drawing.Size(75, 23);
+            this.btnEvaluation.Size = new System.Drawing.Size(75, 29);
             this.btnEvaluation.TabIndex = 7;
             this.btnEvaluation.Text = "Evaluation";
             this.btnEvaluation.UseVisualStyleBackColor = true;
             this.btnEvaluation.Click += new System.EventHandler(this.btnEvaluation_Click);
             // 
-            // button1
+            // CreateGroup
             // 
-            this.button1.Location = new System.Drawing.Point(293, 70);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.CreateGroup.Location = new System.Drawing.Point(241, 109);
+            this.CreateGroup.Name = "CreateGroup";
+            this.CreateGroup.Size = new System.Drawing.Size(75, 23);
+            this.CreateGroup.TabIndex = 8;
+            this.CreateGroup.Text = "Create Group";
+            this.CreateGroup.UseVisualStyleBackColor = true;
+            this.CreateGroup.Click += new System.EventHandler(this.button1_Click);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(396, 353);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.CreateGroup);
             this.Controls.Add(this.btnEvaluation);
             this.Controls.Add(this.btnStudent);
             this.Controls.Add(this.btnAdvisor);
@@ -106,6 +106,6 @@
         private System.Windows.Forms.Button btnAdvisor;
         private System.Windows.Forms.Button btnStudent;
         private System.Windows.Forms.Button btnEvaluation;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button CreateGroup;
     }
 }

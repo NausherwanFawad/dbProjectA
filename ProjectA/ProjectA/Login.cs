@@ -52,6 +52,7 @@ namespace ProjectA
         {
             CreateGroup c = new CreateGroup();
             c.Show();
+            this.Hide();
         }
     }
 }
